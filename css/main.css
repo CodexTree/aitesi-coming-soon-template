@@ -1,0 +1,1300 @@
+/*! HTML5 Boilerplate v5.0.0 | MIT License | http://h5bp.com/ */
+/*
+Template Name: Aitesi
+Author: CodexTree
+Author website: riyadrir.github.io
+Version: 1.0.0
+
+ */
+/**
+ * ============================================================================
+ * Table of Contents
+ * -----------------------------------------------------------------------
+ * #Base styles: opinionated defaults
+ * #Author Custom Style
+ *      1.Author Custom Global Style
+ *         #Vertical nav
+ *         #Section Style
+ *         #Logo Style
+ *         #Coming Soon
+ *         #Countdown Style
+ *         #Social Connect Style
+ *         #Notify Style
+ *         #About Section Style
+ *         #Our Service Section Style                
+ *         #Team Section Style
+ *         #Google Map Style
+ *         #Contact Form Style        
+ *         #Footer Section Style      
+ *     #Helper classes
+ *     ##Responsive Design
+ *    
+ * ============================================================================
+ */
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4
+    }
+
+body {
+    position: relative;
+    overflow-x: hidden;
+    }
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none
+    }
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none
+    }
+
+/*
+ * A better looking default horizontal rule
+ */
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0
+    }
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+audio, canvas, iframe, img, svg, video {
+    vertical-align: middle
+    }
+
+/*
+ * Remove default fieldset styles.
+ */
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0
+    }
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+textarea {
+    resize: vertical
+    }
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0
+    }
+
+/* 
+* ==========================================================================
+  ================= Author Custom Global Style ===========================
+* ========================================================================== 
+*/
+@font-face {
+    font-family: "BeonMedium";
+    src: url(../fonts/beon-webfont.eot);
+    src: local("%u263A"), url(../fonts/beon-webfont.eot?#iefix) format("embedded-opentype"), url(../fonts/beon-webfont.woff) format("woff"), url(../fonts/beon-webfont.ttf) format("truetype"), url(../fonts/beon-webfont.svg#BeonMedium) format("svg");
+    font-weight: normal;
+    font-style: normal
+    }
+
+@font-face {
+    font-family: "latobold";
+    src: url(../fonts/Lato-Bold-webfont.eot);
+    src: url(../fonts/Lato-Bold-webfont.eot?#iefix) format("embedded-opentype"), url(../fonts/Lato-Bold-webfont.woff2) format("woff2"), url(../fonts/Lato-Bold-webfont.woff) format("woff"), url(../fonts/Lato-Bold-webfont.ttf) format("truetype"), url(../fonts/Lato-Bold-webfont.svg#latobold) format("svg");
+    font-weight: normal;
+    font-style: normal
+    }
+
+@font-face {
+    font-family: "latolight";
+    src: url(../fonts/Lato-Light-webfont.eot);
+    src: url(../fonts/Lato-Light-webfont.eot?#iefix) format("embedded-opentype"), url(../fonts/Lato-Light-webfont.woff2) format("woff2"), url(../fonts/Lato-Light-webfont.woff) format("woff"), url(../fonts/Lato-Light-webfont.ttf) format("truetype"), url(../fonts/Lato-Light-webfont.svg#latolight) format("svg");
+    font-weight: normal;
+    font-style: normal
+    }
+
+@font-face {
+    font-family: "latoregular";
+    src: url(../fonts/Lato-Regular-webfont.eot);
+    src: url(../fonts/Lato-Regular-webfont.eot?#iefix) format("embedded-opentype"), url(../fonts/Lato-Regular-webfont.woff2) format("woff2"), url(../fonts/Lato-Regular-webfont.woff) format("woff"), url(../fonts/Lato-Regular-webfont.ttf) format("truetype"), url(../fonts/Lato-Regular-webfont.svg#latoregular) format("svg");
+    font-weight: normal;
+    font-style: normal
+    }
+
+@font-face {
+    font-family: "open_sanslight";
+    src: url(../fonts/OpenSans-Light-webfont.eot);
+    src: url(../fonts/OpenSans-Light-webfont.eot?#iefix) format("embedded-opentype"), url(../fonts/OpenSans-Light-webfont.woff) format("woff"), url(../fonts/OpenSans-Light-webfont.ttf) format("truetype"), url(../fonts/OpenSans-Light-webfont.svg#open_sanslight) format("svg");
+    font-weight: normal;
+    font-style: normal
+    }
+
+html, body {
+    font-family: OpenSans Light, sans-serif;
+    font-size: 14px;
+    margin: 0;
+    padding: 0
+    }
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal
+    }
+
+h2 {
+    font-family: latoregular;
+    font-size: 1.5em
+    }
+
+img {
+    width: 100%;
+    height: auto
+    }
+
+ul {
+    list-style: none
+    }
+
+a {
+    text-decoration: none
+    }
+
+.padding-big {
+    padding: 60px 0
+    }
+
+p {
+    color: #333;
+    font-family: Open_sanslight;
+    font-size: 1.1em
+    }
+
+#container {
+    margin: 0;
+    padding: 0
+    }
+
+.title {
+    color: #333;
+    font-family: latobold;
+    font-size: 2em;
+    text-transform: uppercase;
+    position: relative;
+    display: table;
+    margin: 0 auto
+    }
+
+.title::before {
+    background: none repeat scroll 0 0 #ddd;
+    content: "";
+    height: 2px;
+    left: 25%;
+    position: absolute;
+    top: -8px;
+    width: 50%
+    }
+
+.title::after {
+    background: none repeat scroll 0 0 #ddd;
+    content: "";
+    height: 2px;
+    left: 25%;
+    position: absolute;
+    bottom: -8px;
+    width: 50%
+    }
+
+.title-tag {
+    font-family: open_sanslight;
+    font-size: 1.1em;
+    padding: 10px 0 20px 0
+    }
+
+.padding-2x {
+    padding: 60px 10px;
+    overflow: hidden
+    }
+
+.padding-x {
+    padding: 20px 10px
+    }
+
+.padding-top-2x {
+    padding-top: 60px
+    }
+
+.padding-top-x {
+    padding-top: 20px
+    }
+
+.padding-btm-2x {
+    padding-bottom: 60px
+    }
+
+.padding-btm-x {
+    padding-bottom: 20px
+    }
+
+.margin-2x {
+    margin: 60px 0
+    }
+
+.margin-x {
+    margin: 20px 0
+    }
+
+.margin-top-2x {
+    margin-top: 60px
+    }
+
+.margin-top-x {
+    margin-top: 20px
+    }
+
+.margin-btm-2x {
+    margin-bottom: 60px
+    }
+
+.margin-btm-x {
+    margin-bottom: 20px
+    }
+
+/* 
+* ==========================================================================
+        #Vertical nav
+* ========================================================================== 
+*/
+.vertical-nav {
+    position: fixed;
+    right: 30px;
+    top: 50%;
+    -moz-transform: translatey(-50%);
+    -ms-transform: translatey(-50%);
+    -o-transform: translatey(-50%);
+    -webkit-transform: translatey(-50%);
+    transform: translatey(-50%);
+    z-index: 999
+    }
+
+.vertical-custom-nav {
+    border: none
+    }
+
+.vertical-custom-nav li {
+    float: none !important;
+    text-decoration: none
+    }
+
+.vertical-custom-nav li a {
+    width: 25px;
+    color: #1b95b4;
+    background: transparent;
+    padding: 5px;
+    float: right;
+    text-align: right;
+    margin: 0 0 5px;
+    white-space: nowrap;
+    border: none;
+    outline: none !important
+    }
+
+.nav > li > a:focus, .nav > li > a:hover {
+    text-decoration: none;
+    background: transparent;
+    border: none
+    }
+
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover, .nav li a:hover {
+    background: transparent;
+    border: none;
+    color: #111
+    }
+
+/* 
+* ==========================================================================
+        #Section Style
+* ========================================================================== 
+*/
+.section {
+    height: 100%;
+    width: 100%;
+    color: #fff;
+    text-align: center
+    }
+
+/*  === Section One ===  */
+.section-one {
+    background: #f1f1f1
+    }
+
+/*  === Section Two ===  */
+.section-two {
+    background: #f8f8f8
+    }
+
+/*  === Section Three ===  */
+.section-three {
+    background: #fff
+    }
+
+/*  === Section Four ===  */
+.section-four {
+    background: #f9f9f9
+    }
+
+/*  === Section Five ===  */
+.section-five {
+    background: #fff
+    }
+
+/*  === Section Six ===  */
+.section-six {
+    background: #fff
+    }
+
+/* 
+* ==========================================================================
+        #Logo Style
+* ========================================================================== 
+*/
+.img-logo {
+    width: 200px;
+    height: auto
+    }
+
+.logo-div {
+    text-align: center;
+    margin: 30px 0 0
+    }
+
+.texture-logo {
+    color: #fff;
+    font-size: 3em;
+    text-transform: capitalize
+    }
+
+/* 
+* ==========================================================================
+        #Coming Soon
+* ========================================================================== 
+*/
+.coming-graphics {
+    display: table;
+    margin: 10% auto 15%
+    }
+
+.coming, .soon {
+    position: relative;
+    background-color: #181818;
+    display: table;
+    height: auto;
+    -moz-transform: rotate(-15deg);
+    -ms-transform: rotate(-15deg);
+    -o-transform: rotate(-15deg);
+    -webkit-transform: rotate(-15deg);
+    transform: rotate(-15deg);
+    width: 400px;
+    padding: 30px 0;
+    z-index: 1
+    }
+
+.coming {
+    margin-bottom: -45px;
+    margin-left: 0
+    }
+
+.coming h2,
+.soon h2,
+.promo-text h2 {
+    color: #fff;
+    font-family: BeonMedium;
+    font-size: 3em;
+}
+
+.graphics-box {
+    background-color: #808080;
+    color: #fff;
+    display: table;
+    font-size: 3em;
+    height: 100px;
+    margin: 0 auto;
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    width: 268px
+    }
+
+.soon {
+    margin-left: 162px;
+    margin-top: -44px
+    }
+
+.obak {
+    color: red
+    }
+
+/* 
+* ==========================================================================
+        #Countdown Style
+* ========================================================================== 
+*/
+.countdown-heading h2, .notify-heading h2 {
+    font-family: beonmedium
+    }
+
+.countdown-area {
+    color: #333
+    }
+
+.countdown-heading {
+    background: #222;
+    color: #fff
+    }
+
+.countdown {
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+    display: block;
+    text-align: center;
+    font-family: latolight
+    }
+
+.countdown li {
+    display: inline-block
+    }
+
+.countdown li span {
+    font-size: 80px;
+    font-weight: 300;
+    line-height: 80px
+    }
+
+.countdown li.seperator {
+    font-size: 14px;
+    margin-top: 12px;
+    line-height: 30px;
+    vertical-align: top
+    }
+
+.countdown li p {
+    color: #333;
+    font-size: 14px
+    }
+
+a {
+    color: #76949F;
+    text-decoration: none
+    }
+
+a:hover {
+    text-decoration: underline
+    }
+
+.content-div {
+    width: 100%
+    }
+
+/* 
+* ==========================================================================
+        #Social Connect Style
+* ========================================================================== 
+*/
+
+.promo-text {
+    display: table;
+    background: #1EBEF0;
+    margin: 0;
+    padding: 10px 0;
+
+}
+.social-connect,
+.promo-text {
+    width: 100%
+}
+
+.social-ul {
+    display: table;
+    margin: 0;
+    padding: 0;
+    width: 100%
+    }
+
+.social-li {
+    float: left;
+    width: 25%
+    }
+
+.fa-social {
+    width: 100%;
+    height: 100px;
+    line-height: 100px;
+    color: #fff
+    }
+
+.fa-fb {
+    background-color: #3A5BA2
+    }
+
+.fa-fb:hover {
+    background-color: #fff;
+    color: #3A5BA2
+    }
+
+.fa-tt {
+    background-color: #1EBEF0
+    }
+
+.fa-tt:hover {
+    background-color: #fff;
+    color: #1EBEF0
+    }
+
+.fa-in {
+    background-color: #007BB5
+    }
+
+.fa-in:hover {
+    background-color: #fff;
+    color: #007BB5
+    }
+
+.fa-plus {
+    background-color: #E1584B
+    }
+
+.fa-plus:hover {
+    background-color: #fff;
+    color: #E1584B
+    }
+
+/* 
+* ==========================================================================
+        #Notify Style
+* ========================================================================== 
+*/
+.notify-heading {
+    background: #222;
+    color: #fff
+    }
+
+.input-notify {
+    width: 65% !important;
+    background: transparent;
+    display: table;
+    margin: 0 auto;
+    border: 1px solid #333
+    }
+
+.btn-notify {
+    background: transparent;
+    display: table;
+    margin: 10px auto;
+    border: 1px solid #333;
+    -moz-transition: 2s;
+    -o-transition: 2s;
+    -webkit-transition: 2s;
+    transition: 2s
+    }
+
+.btn-notify:hover, .btn-notify:focus, .btn-notify:active {
+    background: #333;
+    color: #fff;
+    border-color: #333
+    }
+
+.subscribe-form .form-control::-webkit-input-placeholder {
+    color: #333 !important;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)" !important;
+    filter: alpha(opacity=100) !important;
+    opacity: 1 !important
+    }
+
+.subscribe-form .form-control::-moz-input-placeholder {
+    color: #333 !important;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)" !important;
+    filter: alpha(opacity=100) !important;
+    opacity: 1 !important
+    }
+
+.subscribe-form .form-control::-ms-input-placeholder {
+    color: #333 !important;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)" !important;
+    filter: alpha(opacity=100) !important;
+    opacity: 1 !important
+    }
+
+.subscribe_lebel {
+    margin: -10px 0 10px
+    }
+
+.nt-social-ul {
+    display: table;
+    margin: 0 auto -15px;
+    padding: 0
+    }
+
+.nt-social-li {
+    float: left;
+    margin-right: 5px
+    }
+
+.nt-social {
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    background: transparent;
+    color: #333;
+    border: 1px solid #333;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px
+    }
+
+.nt-social:hover {
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+    -moz-transition: all 3s ease 0s;
+    -o-transition: all 3s ease 0s;
+    -webkit-transition: all 3s ease 0s;
+    transition: all 3s ease 0s
+    }
+
+.nt-fb:hover {
+    background: transparent none repeat scroll 0 0;
+    color: #3a5ba2;
+    border: 1px solid #3a5ba2
+    }
+
+.nt-tt:hover {
+    background: transparent none repeat scroll 0 0;
+    color: #1EBEF0;
+    border: 1px solid #1EBEF0
+    }
+
+.nt-in:hover {
+    background: transparent none repeat scroll 0 0;
+    color: #007BB5;
+    border: 1px solid #007BB5
+    }
+
+.nt-plus:hover {
+    background: transparent none repeat scroll 0 0;
+    color: #E1584B;
+    border: 1px solid #E1584B
+    }
+
+/* 
+* ==========================================================================
+        #About Section Style
+* ========================================================================== 
+*/
+.about-title {
+    margin-top: 0
+    }
+
+.about-button {
+    display: table;
+    margin: 50px auto 0
+    }
+
+.btn-about {
+    margin: 0 10px 0;
+    padding: 10px 30px;
+    color: #333;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    border: 1px solid #333;
+    -moz-transition: 2s;
+    -o-transition: 2s;
+    -webkit-transition: 2s;
+    transition: 2s
+    }
+
+.btn-about:hover {
+    background: #333 none repeat scroll 0 0;
+    border-color: #333;
+    color: #fff
+    }
+
+/* 
+* ==========================================================================
+        #Our Service Section Style
+* ========================================================================== 
+*/
+.service-info {
+    position: relative;
+    padding: 30px 10px;
+    width: 99%
+    }
+
+.srv-box:hover {
+    background-color: #181818;
+    color: #fff;
+    cursor: text
+    }
+
+.srv-box:hover .fa-service {
+    color: #fff;
+    border-color: #ddd
+    }
+
+.srv-box:hover p {
+    color: #ddd
+    }
+
+.fa-service {
+    border: 1px solid #333;
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    border-radius: 20px;
+    color: #333;
+    font-size: 3em !important;
+    height: 80px;
+    line-height: 80px !important;
+    text-align: center;
+    width: 80px;
+    -moz-transition: 1s;
+    -o-transition: 1s;
+    -webkit-transition: 1s;
+    transition: 1s
+    }
+
+.service-info:hover .fa-service {
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%
+    }
+
+.service-info h2 {
+    position: relative
+    }
+
+.service-info h2:after {
+    content: "";
+    position: absolute;
+    left: 43%;
+    bottom: -8px;
+    height: 2px;
+    width: 50px;
+    background-color: #ddd
+    }
+
+.service-title {
+    color: #333
+    }
+
+.fa-mbr {
+    padding: 0 5px
+    }
+
+.fa-mbr:hover {
+    color: #333
+    }
+
+/* 
+* ==========================================================================
+        #Team Section Style
+* ========================================================================== 
+*/
+.team-member {
+    display: table;
+    width: 280px;
+    height: auto;
+    position: relative;
+    background: #2c2c2c;
+    border: 1px solid #ddd;
+    margin: 10px auto
+    }
+
+.team-member h2 {
+    color: #fff;
+    font-family: latolight;
+    font-size: 1.2em;
+    margin: 0;
+    padding: 20px 0
+    }
+
+.member-img {
+    display: table;
+    width: 280px;
+    height: 280px;
+    margin: 0 auto;
+    overflow: hidden
+    }
+
+.member-social-div {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    opacity: 0;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: rgb(255, 255, 255);
+    padding: 15px 0;
+    -moz-transition: 1s;
+    -o-transition: 1s;
+    -webkit-transition: 1s;
+    transition: 1s
+    }
+
+.team-member:hover .member-social-div {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: alpha(opacity=100);
+    opacity: 1
+    }
+
+/* 
+* ==========================================================================
+        #Google Map Style
+* ========================================================================== 
+*/
+#map-wrapper {
+    height: 500px
+    }
+
+.map-address {
+    position: relative
+    }
+
+.adr-div {
+    padding: 30px 0
+    }
+
+.adr-div:hover {
+    background: #181818;
+    color: #fff
+    }
+
+.adr-div:hover p {
+    color: #fff
+    }
+
+.adr-div:hover a {
+    color: #fff
+    }
+
+.fa-adr {
+    margin: 0 0 15px
+    }
+
+/* 
+* ==========================================================================
+        #Contact Form Style
+* ========================================================================== 
+*/
+.contact {
+    background-color: #333;
+    color: #fff
+    }
+
+.contact-title {
+    color: #fff
+    }
+
+.contact-tag {
+    color: #fff
+    }
+
+#contact-form .form-group label {
+    display: none;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 100;
+    text-transform: uppercase
+    }
+
+#contact-form.no-placeholder .form-group label {
+    display: block
+    }
+
+#contact-form .controls {
+    padding: 0;
+    margin-top: 40px
+    }
+
+#contact-form.no-placeholder .controls {
+    margin-top: 0
+    }
+
+#contact-form .form-control {
+    display: inline;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #fff;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    outline: none;
+    -moz-box-shadow: 0 0 0 rgba(0, 0, 0, 0.05);
+    -webkit-box-shadow: 0 0 0 rgba(0, 0, 0, 0.05);
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0.05);
+    height: 52px;
+    font-family: open_sanslight;
+    font-size: 14px;
+    line-height: 24px;
+    color: #fff;
+    font-weight: normal;
+    padding-left: 38px;
+    vertical-align: top
+    }
+
+#contact-form .form-group.half-width {
+    width: 40%;
+    float: left
+    }
+
+#contact-form .form-group {
+    position: relative
+    }
+
+#contact-form .form-group [class*=fa] {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 5px;
+    color: #eee;
+    font-size: 24px;
+    line-height: 52px;
+    text-align: center;
+    font-weight: 300;
+    -moz-transition: color 0.3s ease-out;
+    -o-transition: color 0.3s ease-out;
+    -webkit-transition: color 0.3s ease-out;
+    transition: color 0.3s ease-out
+    }
+
+#contact-form .form-group [class*=fa].active {
+    color: #ccc
+    }
+
+#contact-form.no-placeholder .form-group [class*=fa] {
+    top: 30px
+    }
+
+#contact-form textarea.form-control {
+    height: auto;
+    max-width: 100%;
+    min-width: 100%;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 24px;
+    padding-top: 14px;
+    vertical-align: top
+    }
+
+#contact-form .form-control:focus {
+    outline: none;
+    -moz-box-shadow: 0 0 0 rgba(0, 0, 0, 0.05);
+    -webkit-box-shadow: 0 0 0 rgba(0, 0, 0, 0.05);
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0.05)
+    }
+
+#contact-form .error-message {
+    padding: 5px 0;
+    position: absolute;
+    top: -35px;
+    right: 0;
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #ff3345;
+    z-index: 10
+    }
+
+#contact-form.no-placeholder .error-message {
+    top: 0
+    }
+
+#contact-form .form-control::-moz-placeholder {
+    color: #efefef;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+    filter: alpha(opacity=80);
+    opacity: 0.8
+    }
+
+#contact-form .form-control::-webkit-input-placeholder {
+    color: #efefef;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+    filter: alpha(opacity=80);
+    opacity: 0.8
+    }
+
+#contact-form .form-control::-ms-input-placeholder {
+    color: #efefef;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+    filter: alpha(opacity=80);
+    opacity: 0.8
+    }
+
+.btn-contact {
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    margin: 30px 0 0;
+    padding: 12px 0
+    }
+
+.btn-contact:hover {
+    background-color: #fff;
+    color: #333
+    }
+
+/* 
+* ==========================================================================
+        #Footer Section Style
+* ========================================================================== 
+*/
+#footer {
+    background-color: #222;
+    padding: 20px 0;
+    overflow: hidden
+    }
+
+.copyright p {
+    color: #fff;
+    display: block;
+    padding-top: 25px;
+    font-size: 1.1em
+    }
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+/*
+ * Hide visually and from screen readers:
+ * http://juicystudio.com/article/screen-readers-display-none.php
+ */
+.hidden {
+    display: none !important;
+    visibility: hidden
+    }
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px
+    }
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto
+    }
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+.invisible {
+    visibility: hidden
+    }
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.clearfix:before, .clearfix:after {
+    content: " ";
+    /* 1 */
+    display: table;
+    /* 2 */
+    }
+
+.clearfix:after {
+    clear: both
+    }
+
+
+/* ==========================================================================
+        Responsive Design
+========================================================================== */
+
+@media only screen and (max-width: 767px) {
+
+    .about-company {
+        margin-top: 20px;
+    }
+    .input-notify {
+      width: 80% !important;
+    }
+
+}
+
+@media only screen and (max-width: 479px) {
+    
+    .coming, .soon {
+      padding: 10px 0;
+      width: 250px;
+    }
+    .coming {
+      margin-bottom: -40px;
+      margin-left: 0;
+    }
+    .soon {
+      margin-left: 60px;
+      margin-top: -38px;
+    }
+    .graphics-box {
+      height: 100px;
+      transform: rotate(-50deg);
+      width: 200px;
+    }
+
+  
+}
+
+@media only screen and (max-width: 320px){
+   
+   .btn-about {
+        margin: 0 auto;
+   }
+    
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {  
+
+    .countdown li span {
+      font-size: 60px;
+    }
+    .coming, .soon {
+      padding: 10px 0;
+      width: 250px;
+    }
+    .coming {
+      margin-bottom: -40px;
+      margin-left: 0;
+    }
+    .soon {
+      margin-left: 60px;
+      margin-top: -38px;
+    }
+    .graphics-box {
+      height: 100px;
+      transform: rotate(-50deg);
+      width: 200px;
+    }
+
+}
+
+@media only screen and (min-width: 768px) and (max-width:991px) {   
+
+    .countdown li span {
+      font-size: 58px;
+    }
+    .about-company {
+        margin-top: 20px;
+    }
+
+}
+
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+@media print {
+    *, *:before, *:after {
+        background: transparent !important;
+        color: #000 !important;
+        /* Black prints faster: ;
+                http: //www.sanbeiji.com/archives/953 */
+        -moz-box-shadow: none !important;
+        -webkit-box-shadow: none !important;
+        box-shadow: none !important;
+        text-shadow: none !important
+        }
+    a, a:visited {
+        text-decoration: underline
+        }
+    a[href]:after {
+        content: " (" attr(href) ")"
+        }
+    abbr[title]:after {
+        content: " (" attr(title) ")"
+        }
+    /*
+             * Don't show links that are fragment identifiers,
+             * or use the `javascript:` pseudo protocol
+             */
+    a[href^="#"]:after, a[href^="javascript:"]:after {
+        content: ""
+        }
+    pre, blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid
+        }
+    /*
+             * Printing Tables:
+             * http://css-discuss.incutio.com/wiki/Printing_Tables
+             */
+    thead {
+        display: table-header-group
+        }
+    tr, img {
+        page-break-inside: avoid
+        }
+    img {
+        max-width: 100% !important
+        }
+    p, h2, h3 {
+        orphans: 3;
+        widows: 3
+        }
+    h2, h3 {
+        page-break-after: avoid
+        }
+    }
